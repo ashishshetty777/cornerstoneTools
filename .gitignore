@@ -11,7 +11,7 @@ _book/
 ## Output
 coverage/
 docs/latest/api
-dist/
+##dist/
 junit.xml
 .DS_Store
 
