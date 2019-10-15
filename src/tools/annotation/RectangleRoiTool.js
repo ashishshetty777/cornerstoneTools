@@ -193,19 +193,19 @@ export default class RectangleRoiTool extends BaseAnnotationTool {
         drawHandles(context, eventData, data.handles, handleOptions);
 
         // Update textbox stats
-        if (data.invalidated === true) {
-          if (data.cachedStats) {
-            _throttledUpdateCachedStats(
-              image,
-              element,
-              data,
-              modality,
-              pixelSpacing
-            );
-          } else {
-            _updateCachedStats(image, element, data, modality, pixelSpacing);
-          }
-        }
+        // if (data.invalidated === true) {
+        //   if (data.cachedStats) {
+        //     _throttledUpdateCachedStats(
+        //       image,
+        //       element,
+        //       data,
+        //       modality,
+        //       pixelSpacing
+        //     );
+        //   } else {
+        //     _updateCachedStats(image, element, data, modality, pixelSpacing);
+        //   }
+        // }
 
         // Default to textbox on right side of ROI
         if (!data.handles.textBox.hasMoved) {

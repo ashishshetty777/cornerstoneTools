@@ -207,7 +207,7 @@ export default class LengthTool extends BaseAnnotationTool {
         // So that it sits beside the length tool handle
         const xOffset = 10;
 
-        const text = textBoxText(data, rowPixelSpacing, colPixelSpacing);
+        const text = '';
 
         drawLinkedTextBox(
           context,
