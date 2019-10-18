@@ -120,6 +120,7 @@ export default class SphericalBrushTool extends BrushTool {
         );
 
         const previousPixeldata = labelmap2DForImageIdIndex.pixelData.slice();
+
         previousPixeldataForImagesInRange.push(previousPixeldata);
       }
 
@@ -320,6 +321,7 @@ export default class SphericalBrushTool extends BrushTool {
         const previousPixeldata = previousPixeldataForImagesInRange[i];
         const labelmap2D = labelmap3D.labelmaps2D[imageIdIndex];
         const newPixelData = labelmap2D.pixelData;
+
         operations.push({
           imageIdIndex,
           diff: getDiffBetweenPixelData(previousPixeldata, newPixelData),
